@@ -1,0 +1,5 @@
+# FARE consumer theme for Keycloak
+
+This project visually customizes Keycloak for FARE using a [custom theme](https://www.keycloak.org/docs/latest/server_development/index.html#_themes). The login page theme was copied from the "Keycloak" theme and modified. In production, this theme is packaged as a `.jar` file and [deployed as an archive](https://www.keycloak.org/docs/latest/server_development/index.html#deploying-themes) to a Keycloak cluster on [cloud-iam](https://www.cloud-iam.com).
+
+If the theme ever needs to be modified: clone this repository, make the changes, test locally, then commit the changes. Build the archive with `mvn package`. The compiled archive will be named `FARE-consumer.jar` and will appear in the `target` directory. Then the new theme archive can be uploaded to the Keycloak server via the cloud-iam console.
