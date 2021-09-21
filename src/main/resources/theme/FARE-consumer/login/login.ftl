@@ -13,8 +13,10 @@
                     <#if usernameEditDisabled??>
                         <input tabindex="1" id="username" class="${properties.kcInputClass!}" name="username" value="${(login.username!'')}" type="text" disabled />
                     <#else>
-                        <!-- Modified for FARE theme: input type changed from "text" to "email" -->
-                        <input tabindex="1" id="username" class="${properties.kcInputClass!}" name="username" value="${(login.username!'')}"  type="email" autofocus autocomplete="off" aria-invalid="<#if messagesPerField.existsError('username','password')>true</#if>" />
+                        <#-- Modified for FARE theme: input type changed from "text" to "email" -->
+                        <input tabindex="1" id="username" class="${properties.kcInputClass!}" name="username" value="${(login.username!'')}"  type="email" autofocus autocomplete="off"
+                               aria-invalid="<#if messagesPerField.existsError('username','password')>true</#if>"
+                        />
 
                         <#if messagesPerField.existsError('username','password')>
                             <span id="input-error" class="${properties.kcInputErrorMessageClass!}" aria-live="polite">

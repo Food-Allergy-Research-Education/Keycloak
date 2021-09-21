@@ -45,7 +45,7 @@
                     <label for="email" class="${properties.kcLabelClass!}">${msg("email")}</label>
                 </div>
                 <div class="${properties.kcInputWrapperClass!}">
-                    <!-- Modified for FARE theme: input type changed from "text" to "email" -->
+                    <#-- Modified for FARE theme: input type changed from "text" to "email" -->
                     <input type="email" id="email" class="${properties.kcInputClass!}" name="email"
                            value="${(register.formData.email!'')}" autocomplete="email"
                            aria-invalid="<#if messagesPerField.existsError('email')>true</#if>"
