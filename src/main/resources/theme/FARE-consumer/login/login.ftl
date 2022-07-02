@@ -1,3 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Log in to FARE</title>
+</head>
+<body>
+	<#if section = "header">${msg("loginAccountTitle")}</#if>
+	<form action="${url.loginAction}" method="post">
+		<label for="email">Email address</label>
+		<input id="email" name="username" value="${(login.username!'')}"  type="email" autofocus autocomplete="off" />
+		<#if messagesPerField.existsError('username','password')>
+			<span id="input-error">${kcSanitize(messagesPerField.getFirstError('username','password'))?no_esc}</span>
+		</#if>
+		<label for="password">${msg("password")}</label>
+		<input id="password" name="password" type="password" autocomplete="off" />
+		<input name="rememberMe" type="hidden" value="on">
+		<a href="${url.loginResetCredentialsUrl}">Forgot password?</a>
+
+		<div>Don't have an account? <a href="${url.registrationUrl}">Sign up</a></div>
+	</form>
+</body>
+</html>
+
+<!-- break -->
+
 <#import "template.ftl" as layout>
 <@layout.registrationLayout displayMessage=!messagesPerField.existsError('username','password') displayInfo=realm.password && realm.registrationAllowed && !registrationDisabled??; section>
     <#if section = "header">
