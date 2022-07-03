@@ -1,36 +1,21 @@
-<#import "template.ftl" as layout>
-<@layout.registrationLayout displayInfo=true displayMessage=!messagesPerField.existsError('username'); section>
-    <#if section = "header">
-        ${msg("emailForgotTitle")}
-    <#elseif section = "form">
-        <form id="kc-reset-password-form" class="${properties.kcFormClass!}" action="${url.loginAction}" method="post">
-            <div class="${properties.kcFormGroupClass!}">
-                <div class="${properties.kcLabelWrapperClass!}">
-                    <label for="username" class="${properties.kcLabelClass!}"><#if !realm.loginWithEmailAllowed>${msg("username")}<#elseif !realm.registrationEmailAsUsername>${msg("usernameOrEmail")}<#else>${msg("email")}</#if></label>
-                </div>
-                <div class="${properties.kcInputWrapperClass!}">
-                    <#-- Modified for FARE theme: input type changed from "text" to "email" -->
-                    <input type="email" id="username" name="username" class="${properties.kcInputClass!}" autofocus value="${(auth.attemptedUsername!'')}" aria-invalid="<#if messagesPerField.existsError('username')>true</#if>"/>
-                    <#if messagesPerField.existsError('username')>
-                        <span id="input-error-username" class="${properties.kcInputErrorMessageClass!}" aria-live="polite">
-                                    ${kcSanitize(messagesPerField.get('username'))?no_esc}
-                        </span>
-                    </#if>
-                </div>
-            </div>
-            <div class="${properties.kcFormGroupClass!} ${properties.kcFormSettingClass!}">
-                <div id="kc-form-options" class="${properties.kcFormOptionsClass!}">
-                    <div class="${properties.kcFormOptionsWrapperClass!}">
-                        <span><a href="${url.loginUrl}">${kcSanitize(msg("backToLogin"))?no_esc}</a></span>
-                    </div>
-                </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>Forgot your password?</title>
+</head>
+<body>
+    <h1>Forgot your password?</h1>
+    <h3>Enter your email address below and we'll send you a link to reset your password.</h3>
 
-                <div id="kc-form-buttons" class="${properties.kcFormButtonsClass!}">
-                    <input class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonBlockClass!} ${properties.kcButtonLargeClass!}" type="submit" value="${msg("doSubmit")}"/>
-                </div>
-            </div>
-        </form>
-    <#elseif section = "info" >
-        ${msg("emailInstruction")}
-    </#if>
-</@layout.registrationLayout>
+    <form action="${url.loginAction}" method="post"> <!-- todo: disable login button on submit -->
+        <label for="email">Email address</label>
+        <input id="email" name="username" value="${(auth.attemptedUsername!'')}" type="email" autofocus autocomplete="off" />
+        <input type="submit" value="Send reset link" />
+    </form>
+
+    <div><a href="${url.loginUrl}">Log in</a></div>
+
+</body>
+</html>
