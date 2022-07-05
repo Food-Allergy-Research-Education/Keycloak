@@ -1,1 +1,0 @@
-${message.summary?no_esc}
