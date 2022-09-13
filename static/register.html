@@ -2,21 +2,21 @@
 <!-- saved from url=(0014)about:internet -->
 <html xmlns="http://www.w3.org/1999/xhtml" class="login-pf"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
-    
     <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
 
-            <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
     <title>Sign in to fare</title>
-    <link rel="icon" href="https://account.foodallergy.org/auth/resources/khmik/login/FARE-consumer/img/favicon.ico">
-            <link href="./css/base.css" rel="stylesheet">
-            <link href="./css/app.css" rel="stylesheet">
-            <link href="./css/patternfly.min.css" rel="stylesheet">
-            <link href="./css/patternfly-additions.min.css" rel="stylesheet">
-            <link href="./css/pficon.css" rel="stylesheet">
-            <link href="./css/login.css" rel="stylesheet">
-            <link href="./css/tile.css" rel="stylesheet">
 
-            <link href="./css/login_v2.css" rel="stylesheet">
+    <link rel="icon" href="https://account.foodallergy.org/auth/resources/khmik/login/FARE-consumer/img/favicon.ico">
+    <link href="./css/base.css" rel="stylesheet">
+    <link href="./css/app.css" rel="stylesheet">
+    <link href="./css/patternfly.min.css" rel="stylesheet">
+    <link href="./css/patternfly-additions.min.css" rel="stylesheet">
+    <link href="./css/pficon.css" rel="stylesheet">
+    <link href="./css/login.css" rel="stylesheet">
+    <link href="./css/tile.css" rel="stylesheet">
+
+    <link href="./css/login_v2.css" rel="stylesheet">
 </head>
 
 <body class="">
@@ -24,16 +24,56 @@
     <div id="kc-header" class="login-pf-page-header">
         <div id="kc-header-wrapper" class="">&nbsp;</div>
     </div>
+
     <div class="card-pf">
         <header class="fare-header">
-                <h1 id="kc-page-title">        Register
-</h1>
+            <h1 id="kc-page-title">
+                Sign up to support food allergy research.
+            </h1>
       </header>
-      <div id="kc-content">
-        <div id="kc-content-wrapper">
+
+
+<div id="kc-content">
+    <div id="kc-content-wrapper">
+
+
+        <div id="kc-social-providers" class="kc-social-section kc-social-gray">
+            
+            <ul class="pf-c-login__main-footer-links kc-social-links ">
+                <a id="social-google" class="pf-c-button pf-m-control pf-m-block kc-social-item kc-social-gray " type="button" href="https://account.foodallergy.org/auth/realms/fare/broker/google/login?client_id=registry&amp;tab_id=eQAyBqk7A-M&amp;session_code=7vU_EFOw1HfdmejVRT3DnNnrPBY4DQxpW4BhY_SlfW4">
+                    <i class="kc-social-provider-logo kc-social-gray fa fa-google" aria-hidden="true"></i>
+                    <span class="kc-social-provider-name kc-social-icon-text">Google</span>
+                </a>
+
+                <a id="social-facebook" class="pf-c-button pf-m-control pf-m-block kc-social-item kc-social-gray " type="button" href="https://account.foodallergy.org/auth/realms/fare/broker/facebook/login?client_id=registry&amp;tab_id=eQAyBqk7A-M&amp;session_code=7vU_EFOw1HfdmejVRT3DnNnrPBY4DQxpW4BhY_SlfW4">
+                    <i class="kc-social-provider-logo kc-social-gray fa fa-facebook" aria-hidden="true"></i>
+                            <span class="kc-social-provider-name kc-social-icon-text">Facebook</span>
+                </a>
+
+                <a id="social-twitter" class="pf-c-button pf-m-control pf-m-block kc-social-item kc-social-gray " type="button" href="https://account.foodallergy.org/auth/realms/fare/broker/twitter/login?client_id=registry&amp;tab_id=eQAyBqk7A-M&amp;session_code=7vU_EFOw1HfdmejVRT3DnNnrPBY4DQxpW4BhY_SlfW4">
+                    <i class="kc-social-provider-logo kc-social-gray fa fa-twitter" aria-hidden="true"></i>
+                    <span class="kc-social-provider-name kc-social-icon-text">Twitter</span>
+                </a>
+            </ul>
+        </div>
+
+
+        <div>
+            <hr>
+            <h4>Or</h4>
+            <hr>
+        </div>
+
+
+        <div style="text-align:center;">
+            <h2>
+                Sign up with your email address
+            </h2>
+        </div>
 
 
         <form id="kc-register-form" class="form-horizontal" action="https://account.foodallergy.org/auth/realms/fare/login-actions/registration?session_code=vAKOK3vPxKAJEKrrjZ7EchTi5bE_Uz0oQt1zagDUyjM&amp;execution=b23b9f87-7ece-48cd-9cc2-eacf8c2d4619&amp;client_id=registry&amp;tab_id=eVyr4H1gJt4" method="post">
+
             <div class="form-group">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <label for="firstName" class="pf-c-form__label pf-c-form__label-text">First name</label>
@@ -64,47 +104,51 @@
                 </div>
             </div>
 
-
-                <div class="form-group">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <label for="password" class="pf-c-form__label pf-c-form__label-text">Password</label>
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <input type="password" id="password" class="pf-c-form-control" name="password" autocomplete="new-password" aria-invalid="">
-
-                    </div>
+            <div class="form-group">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <label for="password" class="pf-c-form__label pf-c-form__label-text">Password</label>
                 </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <input type="password" id="password" class="pf-c-form-control" name="password" autocomplete="new-password" aria-invalid="">
 
-                <div class="form-group">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <label for="password-confirm" class="pf-c-form__label pf-c-form__label-text">Confirm password</label>
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <input type="password" id="password-confirm" class="pf-c-form-control" name="password-confirm" aria-invalid="">
-
-                    </div>
                 </div>
-
+            </div>
 
             <div class="form-group">
-                <div id="kc-form-options" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="">
-                        <span><a href="https://account.foodallergy.org/auth/realms/fare/login-actions/authenticate?client_id=registry&amp;tab_id=eVyr4H1gJt4">« Back to Login</a></span>
-                    </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <label for="password-confirm" class="pf-c-form__label pf-c-form__label-text">Confirm password</label>
                 </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <input type="password" id="password-confirm" class="pf-c-form-control" name="password-confirm" aria-invalid="">
 
+                </div>
+            </div>
+
+            <div class="form-group">
                 <div id="kc-form-buttons" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <input class="pf-c-button pf-m-primary pf-m-block btn-lg" type="submit" value="Register">
                 </div>
             </div>
+
         </form>
 
 
-        </div>
-      </div>
+        <div id="kc-info" class="login-pf-signup">
+            <div id="kc-info-wrapper" class="">
+                <div id="kc-registration-container">
+                    <div id="kc-registration">
+                        <p>Have an account? <a href="https://account.foodallergy.org/auth/realms/fare/login-actions/authenticate?client_id=registry&amp;tab_id=eVyr4H1gJt4">Log in.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- kc-info -->
 
-    </div>
-  </div>
+
+    </div><!-- kc-content-wrapper -->
+</div><!-- kc-content -->
+
+    </div><!-- kc-header -->
+</div><!-- login-pf-page -->
 
 
 </body></html>

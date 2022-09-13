@@ -2,21 +2,21 @@
 <!-- saved from url=(0014)about:internet -->
 <html xmlns="http://www.w3.org/1999/xhtml" class="login-pf"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
-    
     <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
 
-            <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
     <title>Sign in to fare</title>
-    <link rel="icon" href="https://account.foodallergy.org/auth/resources/khmik/login/FARE-consumer/img/favicon.ico">
-            <link href="./css/base.css" rel="stylesheet">
-            <link href="./css/app.css" rel="stylesheet">
-            <link href="./css/patternfly.min.css" rel="stylesheet">
-            <link href="./css/patternfly-additions.min.css" rel="stylesheet">
-            <link href="./css/pficon.css" rel="stylesheet">
-            <link href="./css/login.css" rel="stylesheet">
-            <link href="./css/tile.css" rel="stylesheet">
 
-            <link href="./css/login_v2.css" rel="stylesheet">
+    <link rel="icon" href="https://account.foodallergy.org/auth/resources/khmik/login/FARE-consumer/img/favicon.ico">
+    <link href="./css/base.css" rel="stylesheet">
+    <link href="./css/app.css" rel="stylesheet">
+    <link href="./css/patternfly.min.css" rel="stylesheet">
+    <link href="./css/patternfly-additions.min.css" rel="stylesheet">
+    <link href="./css/pficon.css" rel="stylesheet">
+    <link href="./css/login.css" rel="stylesheet">
+    <link href="./css/tile.css" rel="stylesheet">
+
+    <link href="./css/login_v2.css" rel="stylesheet">
 </head>
 
 <body class="">
@@ -24,21 +24,50 @@
     <div id="kc-header" class="login-pf-page-header">
         <div id="kc-header-wrapper" class="">&nbsp;</div>
     </div>
+    
     <div class="card-pf">
         <header class="fare-header">
-                <h1 id="kc-page-title">        Sign in to your account
+                <h1 id="kc-page-title">
+                    To continue, log in to FARE.
+                </h1>
+        </header>
 
-</h1>
-      </header>
-      <div id="kc-content">
-        <div id="kc-content-wrapper">
-
+<div id="kc-content">
+<div id="kc-content-wrapper">
 
     <div id="kc-form">
-      <div id="kc-form-wrapper">
+        <div id="kc-social-providers" class="kc-social-section kc-social-gray">
+            
+            <ul class="pf-c-login__main-footer-links kc-social-links ">
+                <a id="social-google" class="pf-c-button pf-m-control pf-m-block kc-social-item kc-social-gray " type="button" href="https://account.foodallergy.org/auth/realms/fare/broker/google/login?client_id=registry&amp;tab_id=eQAyBqk7A-M&amp;session_code=7vU_EFOw1HfdmejVRT3DnNnrPBY4DQxpW4BhY_SlfW4">
+                    <i class="kc-social-provider-logo kc-social-gray fa fa-google" aria-hidden="true"></i>
+                    <span class="kc-social-provider-name kc-social-icon-text">Google</span>
+                </a>
+
+                <a id="social-facebook" class="pf-c-button pf-m-control pf-m-block kc-social-item kc-social-gray " type="button" href="https://account.foodallergy.org/auth/realms/fare/broker/facebook/login?client_id=registry&amp;tab_id=eQAyBqk7A-M&amp;session_code=7vU_EFOw1HfdmejVRT3DnNnrPBY4DQxpW4BhY_SlfW4">
+                    <i class="kc-social-provider-logo kc-social-gray fa fa-facebook" aria-hidden="true"></i>
+                            <span class="kc-social-provider-name kc-social-icon-text">Facebook</span>
+                </a>
+
+                <a id="social-twitter" class="pf-c-button pf-m-control pf-m-block kc-social-item kc-social-gray " type="button" href="https://account.foodallergy.org/auth/realms/fare/broker/twitter/login?client_id=registry&amp;tab_id=eQAyBqk7A-M&amp;session_code=7vU_EFOw1HfdmejVRT3DnNnrPBY4DQxpW4BhY_SlfW4">
+                    <i class="kc-social-provider-logo kc-social-gray fa fa-twitter" aria-hidden="true"></i>
+                    <span class="kc-social-provider-name kc-social-icon-text">Twitter</span>
+                </a>
+            </ul>
+        </div>
+
+
+        <div>
+            <hr>
+            <h4>Or</h4>
+            <hr>
+        </div>
+
+
+        <div id="kc-form-wrapper">
             <form id="kc-form-login" onsubmit="login.disabled = true; return true;" action="https://account.foodallergy.org/auth/realms/fare/login-actions/authenticate?session_code=7vU_EFOw1HfdmejVRT3DnNnrPBY4DQxpW4BhY_SlfW4&amp;execution=8b17638a-644e-4e15-88d5-0614636336d8&amp;client_id=registry&amp;tab_id=eQAyBqk7A-M" method="post">
                 <div class="form-group">
-                    <label for="username" class="pf-c-form__label pf-c-form__label-text">Email</label>
+                    <label for="username" class="pf-c-form__label pf-c-form__label-text">Email address</label>
 
                         <input tabindex="1" id="username" class="pf-c-form-control" name="username" value="" type="email" autofocus="" autocomplete="off" aria-invalid="">
 
@@ -50,66 +79,52 @@
                     <input tabindex="2" id="password" class="pf-c-form-control" name="password" type="password" autocomplete="off" aria-invalid="">
                 </div>
 
+                <div class="form-group">
+                    <div class="">
+                        <span><a tabindex="5" href="https://account.foodallergy.org/auth/realms/fare/login-actions/reset-credentials?client_id=registry&amp;tab_id=eQAyBqk7A-M">Forgot Password?</a></span>
+                    </div>
+                </div>
+
                 <div class="form-group login-pf-settings">
                     <div id="kc-form-options">
-                            <div class="checkbox">
-                                <label>
-                                        <input tabindex="3" id="rememberMe" name="rememberMe" type="checkbox"> Remember me
-                                </label>
-                            </div>
+                        <div class="checkbox">
+                            <label>
+                                <input tabindex="3" id="rememberMe" name="rememberMe" type="checkbox"> Remember me
+                            </label>
                         </div>
-                        <div class="">
-                                <span><a tabindex="5" href="https://account.foodallergy.org/auth/realms/fare/login-actions/reset-credentials?client_id=registry&amp;tab_id=eQAyBqk7A-M">Forgot Password?</a></span>
-                        </div>
+                    </div>
 
-                  </div>
+                    <div id="kc-form-buttons" class="form-group">
+                        <input type="hidden" id="id-hidden-input" name="credentialId">
+                        <input tabindex="4" class="pf-c-button pf-m-primary pf-m-block btn-lg" name="login" id="kc-login" type="submit" value="Sign In">
+                    </div>
 
-                  <div id="kc-form-buttons" class="form-group">
-                      <input type="hidden" id="id-hidden-input" name="credentialId">
-                      <input tabindex="4" class="pf-c-button pf-m-primary pf-m-block btn-lg" name="login" id="kc-login" type="submit" value="Sign In">
-                  </div>
+                </div>
+
+                
             </form>
         </div>
-
-            <div id="kc-social-providers" class="kc-social-section kc-social-gray">
-                <hr>
-                <h4>Or sign in with</h4>
-
-                <ul class="pf-c-login__main-footer-links kc-social-links ">
-                        <a id="social-google" class="pf-c-button pf-m-control pf-m-block kc-social-item kc-social-gray " type="button" href="https://account.foodallergy.org/auth/realms/fare/broker/google/login?client_id=registry&amp;tab_id=eQAyBqk7A-M&amp;session_code=7vU_EFOw1HfdmejVRT3DnNnrPBY4DQxpW4BhY_SlfW4">
-                                <i class="kc-social-provider-logo kc-social-gray fa fa-google" aria-hidden="true"></i>
-                                <span class="kc-social-provider-name kc-social-icon-text">Google</span>
-                        </a>
-                        <a id="social-facebook" class="pf-c-button pf-m-control pf-m-block kc-social-item kc-social-gray " type="button" href="https://account.foodallergy.org/auth/realms/fare/broker/facebook/login?client_id=registry&amp;tab_id=eQAyBqk7A-M&amp;session_code=7vU_EFOw1HfdmejVRT3DnNnrPBY4DQxpW4BhY_SlfW4">
-                                <i class="kc-social-provider-logo kc-social-gray fa fa-facebook" aria-hidden="true"></i>
-                                <span class="kc-social-provider-name kc-social-icon-text">Facebook</span>
-                        </a>
-                        <a id="social-twitter" class="pf-c-button pf-m-control pf-m-block kc-social-item kc-social-gray " type="button" href="https://account.foodallergy.org/auth/realms/fare/broker/twitter/login?client_id=registry&amp;tab_id=eQAyBqk7A-M&amp;session_code=7vU_EFOw1HfdmejVRT3DnNnrPBY4DQxpW4BhY_SlfW4">
-                                <i class="kc-social-provider-logo kc-social-gray fa fa-twitter" aria-hidden="true"></i>
-                                <span class="kc-social-provider-name kc-social-icon-text">Twitter</span>
-                        </a>
-                </ul>
-            </div>
-
-    </div>
+    </div><!-- kc-form -->
 
 
 
-              <div id="kc-info" class="login-pf-signup">
-                  <div id="kc-info-wrapper" class="">
+    <div id="kc-info" class="login-pf-signup">
+        <div id="kc-info-wrapper" class="">
             <div id="kc-registration-container">
                 <div id="kc-registration">
-                    <span>New user? <a tabindex="6" href="https://account.foodallergy.org/auth/realms/fare/login-actions/registration?client_id=registry&amp;tab_id=eQAyBqk7A-M">Register</a></span>
+                    <p>Don't have an account?</p>
+
+                    <a tabindex="6" href="https://account.foodallergy.org/auth/realms/fare/login-actions/registration?client_id=registry&amp;tab_id=eQAyBqk7A-M">Sign Up with FARE</a></span>
                 </div>
             </div>
-
-                  </div>
-              </div>
         </div>
-      </div>
+    </div><!-- kc-info -->
 
-    </div>
-  </div>
 
+</div><!-- kc-content-wrapper -->
+</div><!-- kc-content -->
+
+    </div><!-- card-pf -->
+</div><!-- login-pf-page -->
 
 </body></html>
