@@ -1,0 +1,82 @@
+/* Custom additions to Tachyons */
+/* Colors */
+.fare-black {color: #38393a}
+.bg-fare-black {background-color: #38393a}
+
+.fare-purple {color: #1d4f91;}
+.bg-fare-purple {background-color: #1d4f91;}
+
+.fare-aqua {color: #0fbdcb;}
+.bg-fare-aqua {background-color: #0fbdcb;}
+
+.fare-yellow {color: #f0db02;}
+.bg-fare-yellow {background-color: #f0db02;}
+
+.bg-fare-login {
+	border: 1px solid #0fbdcb;
+	transition: .15s ease-in-out;
+
+	&:hover, &:active {
+		border-color: #1d4f91;
+	}
+
+	&:focus-visible {
+    outline: #1d4f91 auto 1px;
+	}
+}
+.bg-fare-login-solid {
+	background-color: #f0db02;
+	transition: .15s ease-in-out;
+
+	border: 0;
+	cursor: pointer;
+
+	&:hover, &:active {
+		background-color: #f0c002;
+	}
+
+	&:focus-visible {
+    outline: #1d4f91 auto 1px;
+	}
+}
+
+input:checked + label {
+	background-color: #169b45;
+    border-width: 0px;
+}
+
+.fare-link {
+	color: #0fbdcb;
+	transition: .15s ease-in-out;
+	text-decoration: none;
+
+	&:hover {
+		color: #1d4f91;
+		text-decoration: underline;
+	}
+}
+
+/* Dimensions */
+.mw-20px {max-width: 20px;}
+.mw-24px {max-width: 24px;}
+.mw-90px {max-width: 90px;}
+.mw-180px {max-width: 180px;}
+.mw-450px {max-width: 450px;}
+
+.h-1px {height: 1px;}
+.h-2px {height: 2px;}
+
+.mh-24px {max-height: 24px;}
+
+
+/* Custom Elements */
+.fare__divider {}
+
+.fare__or {}
+
+
+
+
+
+
+
