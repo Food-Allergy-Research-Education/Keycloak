@@ -47,16 +47,21 @@
 }
 
 /* line 19, /Users/bbb333/workspace/fare/Keycloak/static/scss/tachyons-fare.scss */
+.bg-fare-login span {
+  transition: .15s ease-in-out;
+}
+
+/* line 21, /Users/bbb333/workspace/fare/Keycloak/static/scss/tachyons-fare.scss */
 .bg-fare-login:hover, .bg-fare-login:active {
   border-color: #1d4f91;
 }
 
-/* line 23, /Users/bbb333/workspace/fare/Keycloak/static/scss/tachyons-fare.scss */
+/* line 28, /Users/bbb333/workspace/fare/Keycloak/static/scss/tachyons-fare.scss */
 .bg-fare-login:focus-visible {
   outline: #1d4f91 auto 1px;
 }
 
-/* line 27, /Users/bbb333/workspace/fare/Keycloak/static/scss/tachyons-fare.scss */
+/* line 33, /Users/bbb333/workspace/fare/Keycloak/static/scss/tachyons-fare.scss */
 .bg-fare-login-solid {
   background-color: #f0db02;
   transition: .15s ease-in-out;
@@ -64,72 +69,72 @@
   cursor: pointer;
 }
 
-/* line 34, /Users/bbb333/workspace/fare/Keycloak/static/scss/tachyons-fare.scss */
+/* line 39, /Users/bbb333/workspace/fare/Keycloak/static/scss/tachyons-fare.scss */
 .bg-fare-login-solid:hover, .bg-fare-login-solid:active {
   background-color: #f0c002;
 }
 
-/* line 38, /Users/bbb333/workspace/fare/Keycloak/static/scss/tachyons-fare.scss */
+/* line 43, /Users/bbb333/workspace/fare/Keycloak/static/scss/tachyons-fare.scss */
 .bg-fare-login-solid:focus-visible {
   outline: #1d4f91 auto 1px;
 }
 
-/* line 43, /Users/bbb333/workspace/fare/Keycloak/static/scss/tachyons-fare.scss */
+/* line 48, /Users/bbb333/workspace/fare/Keycloak/static/scss/tachyons-fare.scss */
 input:checked + label {
   background-color: #169b45;
   border-width: 0px;
 }
 
-/* line 48, /Users/bbb333/workspace/fare/Keycloak/static/scss/tachyons-fare.scss */
+/* line 53, /Users/bbb333/workspace/fare/Keycloak/static/scss/tachyons-fare.scss */
 .fare-link {
   color: #0fbdcb;
   transition: .15s ease-in-out;
   text-decoration: none;
 }
 
-/* line 53, /Users/bbb333/workspace/fare/Keycloak/static/scss/tachyons-fare.scss */
+/* line 58, /Users/bbb333/workspace/fare/Keycloak/static/scss/tachyons-fare.scss */
 .fare-link:hover {
   color: #1d4f91;
   text-decoration: underline;
 }
 
 /* Dimensions */
-/* line 60, /Users/bbb333/workspace/fare/Keycloak/static/scss/tachyons-fare.scss */
+/* line 65, /Users/bbb333/workspace/fare/Keycloak/static/scss/tachyons-fare.scss */
 .mw-20px {
   max-width: 20px;
 }
 
-/* line 61, /Users/bbb333/workspace/fare/Keycloak/static/scss/tachyons-fare.scss */
+/* line 66, /Users/bbb333/workspace/fare/Keycloak/static/scss/tachyons-fare.scss */
 .mw-24px {
   max-width: 24px;
 }
 
-/* line 62, /Users/bbb333/workspace/fare/Keycloak/static/scss/tachyons-fare.scss */
+/* line 67, /Users/bbb333/workspace/fare/Keycloak/static/scss/tachyons-fare.scss */
 .mw-90px {
   max-width: 90px;
 }
 
-/* line 63, /Users/bbb333/workspace/fare/Keycloak/static/scss/tachyons-fare.scss */
+/* line 68, /Users/bbb333/workspace/fare/Keycloak/static/scss/tachyons-fare.scss */
 .mw-180px {
   max-width: 180px;
 }
 
-/* line 64, /Users/bbb333/workspace/fare/Keycloak/static/scss/tachyons-fare.scss */
+/* line 69, /Users/bbb333/workspace/fare/Keycloak/static/scss/tachyons-fare.scss */
 .mw-450px {
   max-width: 450px;
 }
 
-/* line 66, /Users/bbb333/workspace/fare/Keycloak/static/scss/tachyons-fare.scss */
+/* line 71, /Users/bbb333/workspace/fare/Keycloak/static/scss/tachyons-fare.scss */
 .h-1px {
   height: 1px;
 }
 
-/* line 67, /Users/bbb333/workspace/fare/Keycloak/static/scss/tachyons-fare.scss */
+/* line 72, /Users/bbb333/workspace/fare/Keycloak/static/scss/tachyons-fare.scss */
 .h-2px {
   height: 2px;
 }
 
-/* line 69, /Users/bbb333/workspace/fare/Keycloak/static/scss/tachyons-fare.scss */
+/* line 74, /Users/bbb333/workspace/fare/Keycloak/static/scss/tachyons-fare.scss */
 .mh-24px {
   max-height: 24px;
 }

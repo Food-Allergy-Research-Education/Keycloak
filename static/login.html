@@ -38,14 +38,14 @@
             <div id="fare__divider" class="db w-100 h-2px bg-fare-yellow mb3"></div>
 
             <h1 
-            class="db cb m0 pt4  helvetica fare-purple f5 fw5 tc">
+            class="db cb m0 pt4 helvetica fare-black f5 fw5 tc">
                 To continue, log in to FARE:
             </h1>
         </header>
 
 
         <div id="fare__body"
-        class="db pl2 pr2">
+        class="db pl2 pr2 mb4">
 
             <div id="fare__social" class="db mw-450px center p0 m0">
                 <a id="social__facebook" type="button" href="#"
@@ -81,7 +81,7 @@
             <div id="fare__or" 
             class="mw-450px center flex flex-row flex-nowrap justify-between items-center content-center mb2">
                 <div class="db w-40 h-1px m0 bg-fare-aqua"></div>
-                <h4 class="db m0 helvetica fare-purple f7 fw5 tc">Or</h4>
+                <h4 class="db m0 helvetica fare-black f7 fw5 tc">Or</h4>
                 <div class="db w-40 h-1px m0 bg-fare-aqua"></div>
             </div>
 
@@ -117,8 +117,10 @@
                 <div id="fare__signin"
                 class="flex flex-row flex-nowrap justify-between items-top content-center">
                     <div class="w-50">
-                        <label>
-                            <input tabindex="3" id="rememberMe" name="rememberMe" type="checkbox">Remember me
+                        <label
+                        class="helvetica fare-black f6 fw5">
+                            <input tabindex="3" id="rememberMe" name="rememberMe" type="checkbox"
+                            class="mr2">Remember me
                         </label>
                     </div>
 
@@ -133,13 +135,22 @@
         </div><!-- kc-form -->
 
 
-        <div id="fare__signup" class="">
+        <div id="fare__signup" class="db mw-450px center mb5">
+            <div id="fare__divider__footer" class="db w-100 h-1px bg-fare-aqua mb3"></div>
+
+
             <div id="kc-info-wrapper" class="">
                 <div id="kc-registration-container">
                     <div id="kc-registration">
-                        <p>Don't have an account?</p>
+                        <p 
+                        class="db cb m0 pt4 helvetica fare-black f5 fw6 tc">Don't have an account?</p>
 
-                        <a tabindex="6" href="https://account.foodallergy.org/auth/realms/fare/login-actions/registration?client_id=registry&amp;tab_id=eQAyBqk7A-M">Sign Up with FARE</a></span>
+                        <a tabindex="6" href=""
+                        class="db w-100 bg-fare-login br-pill inline-flex flex-row flex-nowrap justify-center items-center content-center no-underline pa3 mb2">
+                            <span class="db m0 helvetica f6 fw6 tracked fare-purple ttu">
+                            Sign Up with FARE
+                            </span>
+                        </a>
                     </div>
                 </div>
             </div>

@@ -16,18 +16,23 @@
 	border: 1px solid #0fbdcb;
 	transition: .15s ease-in-out;
 
+	span {transition: .15s ease-in-out;}
+
 	&:hover, &:active {
 		border-color: #1d4f91;
+
+		span {
+		}
 	}
 
 	&:focus-visible {
-    outline: #1d4f91 auto 1px;
+    	outline: #1d4f91 auto 1px;
 	}
 }
+
 .bg-fare-login-solid {
 	background-color: #f0db02;
 	transition: .15s ease-in-out;
-
 	border: 0;
 	cursor: pointer;
 
