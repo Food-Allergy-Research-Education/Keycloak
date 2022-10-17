@@ -1,3 +1,9 @@
+/* Resets */
+img {
+	width: 100%;
+}
+
+
 /* Custom additions to Tachyons */
 /* Colors */
 .fare-black {color: #38393a}
@@ -20,6 +26,7 @@
 
 	&:hover, &:active {
 		border-color: #1d4f91;
+
 
 		span {
 		}
@@ -63,7 +70,10 @@ input:checked + label {
 
 /* Dimensions */
 .mw-20px {max-width: 20px;}
-.mw-24px {max-width: 24px;}
+
+.w-24px {width: 24px; max-width: 24px;}
+.mw-24px {width: 100%; max-width: 24px;}
+
 .mw-90px {max-width: 90px;}
 .mw-180px {max-width: 180px;}
 .mw-450px {max-width: 450px;}
@@ -71,13 +81,77 @@ input:checked + label {
 .h-1px {height: 1px;}
 .h-2px {height: 2px;}
 
-.mh-24px {max-height: 24px;}
+.h-24px {width: auto; height: 24px; max-height: auto;}
+.mh-24px {width: auto; height: 100%; max-height: 24px;}
+
+
+.lh-1 {
+	line-height: 1;
+}
+.lh-19px {
+	line-height: 19px;
+}
 
 
 /* Custom Elements */
 .fare__divider {}
 
 .fare__or {}
+
+
+
+
+
+
+.fare-checkbox-wrapper {
+	cursor: pointer;
+	
+}
+.fare-checkbox-wrapper::selection {background: transparent;}
+.fare-checkbox-wrapper::-moz-selection {background: transparent;}
+
+input[type="checkbox"] {
+	cursor: pointer;
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: transparent;
+	margin: 0;
+
+	float: left;
+	width: 16px;
+	height: 16px;
+	border: 1px solid #0fbdcb;
+	border-radius: 3px;
+
+	display: grid;
+	place-content: center;
+
+	&:hover, &:active {
+		border-color: #1d4f91;
+	}
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transform: scale(0);
+  transform-origin: bottom left;
+  box-shadow: inset 1em 1em var(--form-control-color);
+  background-color: #38393a;
+}
+
+input[type="checkbox"]:checked {
+	background-color: #f0db02;
+	border: 1px solid #f0db02;
+}
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+
+
 
 
 
