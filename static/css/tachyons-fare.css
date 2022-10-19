@@ -172,6 +172,7 @@ input:checked + label {
 }
 
 /* Custom Elements */
+/* FARE Checkbox styles */
 /* line 106, /Users/bbb333/workspace/fare/Keycloak/static/scss/tachyons-fare.scss */
 .fare-checkbox-wrapper {
   cursor: pointer;
@@ -192,23 +193,23 @@ input[type="checkbox"] {
   cursor: pointer;
   -webkit-appearance: none;
   appearance: none;
-  background-color: transparent;
-  margin: 0;
+  display: grid;
+  place-content: center;
   float: left;
   width: 16px;
   height: 16px;
+  margin: 0;
+  background-color: transparent;
   border: 1px solid #0fbdcb;
-  border-radius: 3px;
-  display: grid;
-  place-content: center;
+  border-radius: .125rem;
 }
 
-/* line 129, /Users/bbb333/workspace/fare/Keycloak/static/scss/tachyons-fare.scss */
+/* line 127, /Users/bbb333/workspace/fare/Keycloak/static/scss/tachyons-fare.scss */
 input[type="checkbox"]:hover, input[type="checkbox"]:active {
   border-color: #1d4f91;
 }
 
-/* line 134, /Users/bbb333/workspace/fare/Keycloak/static/scss/tachyons-fare.scss */
+/* line 132, /Users/bbb333/workspace/fare/Keycloak/static/scss/tachyons-fare.scss */
 input[type="checkbox"]::before {
   content: "";
   width: 10px;
@@ -220,13 +221,13 @@ input[type="checkbox"]::before {
   background-color: #38393a;
 }
 
-/* line 145, /Users/bbb333/workspace/fare/Keycloak/static/scss/tachyons-fare.scss */
+/* line 143, /Users/bbb333/workspace/fare/Keycloak/static/scss/tachyons-fare.scss */
 input[type="checkbox"]:checked {
   background-color: #f0db02;
   border: 1px solid #f0db02;
 }
 
-/* line 149, /Users/bbb333/workspace/fare/Keycloak/static/scss/tachyons-fare.scss */
+/* line 147, /Users/bbb333/workspace/fare/Keycloak/static/scss/tachyons-fare.scss */
 input[type="checkbox"]:checked::before {
   transform: scale(1);
 }

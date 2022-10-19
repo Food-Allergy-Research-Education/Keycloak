@@ -102,7 +102,7 @@ input:checked + label {
 
 
 
-
+/* FARE Checkbox styles */
 .fare-checkbox-wrapper {
 	cursor: pointer;
 	
@@ -114,17 +114,15 @@ input[type="checkbox"] {
 	cursor: pointer;
 	-webkit-appearance: none;
 	appearance: none;
-	background-color: transparent;
-	margin: 0;
-
+	display: grid;
+	place-content: center;
 	float: left;
 	width: 16px;
 	height: 16px;
+	margin: 0;
+	background-color: transparent;
 	border: 1px solid #0fbdcb;
-	border-radius: 3px;
-
-	display: grid;
-	place-content: center;
+	border-radius: .125rem;
 
 	&:hover, &:active {
 		border-color: #1d4f91;
