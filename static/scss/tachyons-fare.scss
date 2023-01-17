@@ -3,7 +3,6 @@ img {
 	width: 100%;
 }
 
-
 /* Custom additions to Tachyons */
 /* Colors */
 .fare-black {color: #38393a}
@@ -18,43 +17,45 @@ img {
 .fare-yellow {color: #f0db02;}
 .bg-fare-yellow {background-color: #f0db02;}
 
-.bg-fare-login {
+.fare-login-outline {
+	outline: 0;
 	border: 1px solid #0fbdcb;
 	transition: .15s ease-in-out;
 
 	span {transition: .15s ease-in-out;}
 
-	&:hover, &:active {
+	&:hover {
 		border-color: #1d4f91;
-
-
-		span {
-		}
+	}
+	&:active {
+		border-color: #1d4f91;
+		-webkit-box-shadow: 0px 0px 0px 1px #1C6EA4; 
+		box-shadow: 0px 0px 0px 1px #1C6EA4;
 	}
 
 	&:focus-visible {
-    	outline: #1d4f91 auto 1px;
+    	border-color: #1d4f91;
+		-webkit-box-shadow: 0px 0px 0px 1px #1C6EA4; 
+		box-shadow: 0px 0px 0px 1px #1C6EA4;
 	}
 }
 
-.bg-fare-login-solid {
+.fare-login-solid {
+	outline: 0;
 	background-color: #f0db02;
 	transition: .15s ease-in-out;
-	border: 0;
+	border: 1px solid #f0db02;
 	cursor: pointer;
 
-	&:hover, &:active {
+	&:hover {
 		background-color: #f0c002;
+		border: 1px solid #f0c002;
 	}
-
-	&:focus-visible {
-    outline: #1d4f91 auto 1px;
+	&:active, &:focus-visible {
+		background-color: #f0c002;
+		-webkit-box-shadow: 0px 0px 0px 1px #f0c002; 
+		box-shadow: 0px 0px 0px 1px #f0c002;
 	}
-}
-
-input:checked + label {
-	background-color: #169b45;
-    border-width: 0px;
 }
 
 .fare-link {
@@ -105,12 +106,17 @@ input:checked + label {
 /* FARE Checkbox styles */
 .fare-checkbox-wrapper {
 	cursor: pointer;
-	
 }
+input:checked + label {
+	background-color: #169b45;
+    border-width: 0px;
+}
+
 .fare-checkbox-wrapper::selection {background: transparent;}
 .fare-checkbox-wrapper::-moz-selection {background: transparent;}
 
 input[type="checkbox"] {
+	transition: .15s ease-in-out;
 	cursor: pointer;
 	-webkit-appearance: none;
 	appearance: none;

@@ -1,155 +1,147 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!-- saved from url=(0014)about:internet -->
 <html xmlns="http://www.w3.org/1999/xhtml" class="login-pf"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta name="robots" content="noindex, nofollow">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
 
-    <title>Sign in to fare</title>
+    <title>FARE - Sign up</title>
 
     <link rel="icon" href="https://account.foodallergy.org/auth/resources/khmik/login/FARE-consumer/img/favicon.ico">
-    <link href="./css/base.css" rel="stylesheet">
-    <link href="./css/app.css" rel="stylesheet">
-    <link href="./css/patternfly.min.css" rel="stylesheet">
-    <link href="./css/patternfly-additions.min.css" rel="stylesheet">
-    <link href="./css/pficon.css" rel="stylesheet">
-    <link href="./css/login.css" rel="stylesheet">
-    <link href="./css/tile.css" rel="stylesheet">
-
+    
     <link href="./tachyons/tachyons.min.css" rel="stylesheet">
+    <link href="./css/tachyons-fare.css" rel="stylesheet">
     <link href="./css/login_v2.css" rel="stylesheet">
 </head>
 
-<body class="">
-<div class="login-pf-page">
-    <div id="kc-header" class="login-pf-page-header">
-        <div id="kc-header-wrapper" class="">&nbsp;</div>
-    </div>
+<body id="fare" class="">
 
-    <div class="card-pf">
-        <header class="fare-header">
-            <h1 id="kc-page-title">
+    <div id="fare__layout" 
+    class="db w-100">
+
+        <header id="fare__header" class="db">
+            <div id="fare__logo" 
+            class="db mw-450px pt3 pb3 center">
+                <img src="./img/fare-logo.svg" alt="Food Allergy Research and Education" class="db mw-180px center" />
+            </div>
+
+            <div id="fare__divider" class="db w-100 h-2px bg-fare-yellow mb3"></div>
+
+            <h1 
+            class="db cb m0 pt4 helvetica fare-black f5 fw5 tc mb2">
                 Sign up to support food allergy research.
             </h1>
-      </header>
+        </header>
 
 
-<div id="kc-content">
-    <div id="kc-content-wrapper">
+        <div id="fare__body"
+        class="db pl2 pr2 mb4">
 
-
-        <div id="kc-social-providers" class="kc-social-section kc-social-gray">
-            
-            <ul class="pf-c-login__main-footer-links kc-social-links ">
-                <a id="social-google" class="pf-c-button pf-m-control pf-m-block kc-social-item kc-social-gray " type="button" href="https://account.foodallergy.org/auth/realms/fare/broker/google/login?client_id=registry&amp;tab_id=eQAyBqk7A-M&amp;session_code=7vU_EFOw1HfdmejVRT3DnNnrPBY4DQxpW4BhY_SlfW4">
-                    <i class="kc-social-provider-logo kc-social-gray fa fa-google" aria-hidden="true"></i>
-                    <span class="kc-social-provider-name kc-social-icon-text">Google</span>
+            <div id="fare__social" class="db mw-450px center p0 m0">
+                <a id="social__facebook" type="button" href="#"
+                class="db w-100 fare-login-outline br-pill inline-flex flex-row flex-nowrap justify-center items-center content-center no-underline pa3 mb2">
+                    <i aria-hidden="true" 
+                    class="db mr2 w-24px h-24px inline-flex flex-row flex-nowrap justify-center items-center content-center">
+                        <img src="./img/icon-fb.svg" alt="Facebook logo" />
+                    </i>
+                    <span class="db m0 helvetica f6 fw6 tracked fare-purple ttu lh-1">Continue With Facebook</span>
                 </a>
 
-                <a id="social-facebook" class="pf-c-button pf-m-control pf-m-block kc-social-item kc-social-gray " type="button" href="https://account.foodallergy.org/auth/realms/fare/broker/facebook/login?client_id=registry&amp;tab_id=eQAyBqk7A-M&amp;session_code=7vU_EFOw1HfdmejVRT3DnNnrPBY4DQxpW4BhY_SlfW4">
-                    <i class="kc-social-provider-logo kc-social-gray fa fa-facebook" aria-hidden="true"></i>
-                            <span class="kc-social-provider-name kc-social-icon-text">Facebook</span>
+                <a id="social__apple" type="button" href="#"
+                class="db w-100 fare-login-outline br-pill inline-flex flex-row flex-nowrap justify-center items-center content-center no-underline pa3 mb2">
+                    <i aria-hidden="true" 
+                    class="db mr2 w-24px h-24px inline-flex flex-row flex-nowrap justify-center items-center content-center">
+                        <img src="./img/icon-apple.svg" alt="Apple logo" class="mh-24px" style="margin-top:-3px;" />
+                    </i>
+                    <span class="db m0 helvetica f6 fw6 tracked fare-purple ttu lh-1">Continue With Apple</span>
                 </a>
 
-                <a id="social-twitter" class="pf-c-button pf-m-control pf-m-block kc-social-item kc-social-gray " type="button" href="https://account.foodallergy.org/auth/realms/fare/broker/twitter/login?client_id=registry&amp;tab_id=eQAyBqk7A-M&amp;session_code=7vU_EFOw1HfdmejVRT3DnNnrPBY4DQxpW4BhY_SlfW4">
-                    <i class="kc-social-provider-logo kc-social-gray fa fa-twitter" aria-hidden="true"></i>
-                    <span class="kc-social-provider-name kc-social-icon-text">Twitter</span>
+                <a id="social_twitter" type="button" href="#"
+                class="db w-100 fare-login-outline br-pill inline-flex flex-row flex-nowrap justify-center items-center content-center no-underline pa3 mb2">
+                    <i aria-hidden="true" 
+                    class="db mr2 w-24px h-24px inline-flex flex-row flex-nowrap justify-center items-center content-center">
+                        <img src="./img/icon-twitter.svg" alt="Twitter logo" style="margin-top:-2px"/>
+                    </i>
+                    <span class="db m0 helvetica f6 fw6 tracked fare-purple ttu lh-1">Continue with Twitter</span>
                 </a>
-            </ul>
-        </div>
-
-
-        <div>
-            <hr>
-            <h4>Or</h4>
-            <hr>
-        </div>
-
-
-        <div style="text-align:center;">
-            <h2>
-                Sign up with your email address
-            </h2>
-        </div>
-
-
-        <form id="kc-register-form" class="form-horizontal" action="https://account.foodallergy.org/auth/realms/fare/login-actions/registration?session_code=vAKOK3vPxKAJEKrrjZ7EchTi5bE_Uz0oQt1zagDUyjM&amp;execution=b23b9f87-7ece-48cd-9cc2-eacf8c2d4619&amp;client_id=registry&amp;tab_id=eVyr4H1gJt4" method="post">
-
-            <div class="form-group">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <label for="firstName" class="pf-c-form__label pf-c-form__label-text">First name</label>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <input type="text" id="firstName" class="pf-c-form-control" name="firstName" value="" aria-invalid="">
-
-                </div>
             </div>
 
-            <div class="form-group">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <label for="lastName" class="pf-c-form__label pf-c-form__label-text">Last name</label>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <input type="text" id="lastName" class="pf-c-form-control" name="lastName" value="" aria-invalid="">
 
-                </div>
+            <div id="fare__or" 
+            class="mw-450px center flex flex-row flex-nowrap justify-between items-center content-center mb2">
+                <div class="db w-40 h-1px m0 bg-fare-aqua"></div>
+                <h4 class="db m0 helvetica fare-black f7 fw5 tc">Or</h4>
+                <div class="db w-40 h-1px m0 bg-fare-aqua"></div>
             </div>
 
-            <div class="form-group">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <label for="email" class="pf-c-form__label pf-c-form__label-text">Email</label>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <input type="email" id="email" class="pf-c-form-control" name="email" value="" autocomplete="email" aria-invalid="">
-
-                </div>
-            </div>
-
-            <div class="form-group">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <label for="password" class="pf-c-form__label pf-c-form__label-text">Password</label>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <input type="password" id="password" class="pf-c-form-control" name="password" autocomplete="new-password" aria-invalid="">
-
-                </div>
-            </div>
-
-            <div class="form-group">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <label for="password-confirm" class="pf-c-form__label pf-c-form__label-text">Confirm password</label>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <input type="password" id="password-confirm" class="pf-c-form-control" name="password-confirm" aria-invalid="">
-
-                </div>
-            </div>
-
-            <div class="form-group">
-                <div id="kc-form-buttons" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <input class="pf-c-button pf-m-primary pf-m-block btn-lg" type="submit" value="Register">
-                </div>
-            </div>
-
-        </form>
-
-
-        <div id="kc-info" class="login-pf-signup">
-            <div id="kc-info-wrapper" class="">
-                <div id="kc-registration-container">
-                    <div id="kc-registration">
-                        <p>Have an account? <a href="https://account.foodallergy.org/auth/realms/fare/login-actions/authenticate?client_id=registry&amp;tab_id=eVyr4H1gJt4">Log in.</a></p>
+                <form id="kc-register-form" onsubmit="" action="" method="post"
+                class="mw-450px center">
+                    <div>
+                        <label for="firstName" class="dn">First name</label>
+                        <input type="text" id="firstName" name="firstName" value="" aria-invalid="" placeholder="First name" 
+                        class="db w-100 helvetica f5 fw5 pa3 mb2 br1 fare-black fare-login-outline">
                     </div>
+
+                    <div>
+                        <label for="lastName" class="dn">Last name</label>
+                        <input type="text" id="lastName" name="lastName" value="" aria-invalid="" placeholder="Last name" 
+                        class="db w-100 helvetica f5 fw5 pa3 mb2 br1 fare-black fare-login-outline">
+                    </div>
+
+                    <div>
+                        <label for="email" class="dn">Email</label>
+                        <input type="email" id="email" name="email" value="" autocomplete="email" aria-invalid="" placeholder="Email address" 
+                        class="db w-100 helvetica f5 fw5 pa3 mb2 br1 fare-black fare-login-outline">
+                    </div>
+
+                    <div>
+                        <label for="password" class="dn">Password</label>
+                        <input type="password" id="password" name="password" autocomplete="new-password" aria-invalid="" placeholder="Password" 
+                        class="db w-100 helvetica f5 fw5 pa3 mb2 br1 fare-black fare-login-outline">
+                    </div>
+
+                    <div>
+                        <label for="password-confirm" class="dn">Confirm password</label>
+                        <input type="password" id="password-confirm" name="password-confirm" aria-invalid="" placeholder="Confirm password" 
+                        class="db w-100 helvetica f5 fw5 pa3 mb2 br1 fare-black fare-login-outline">
+                    </div>
+
+                    
+                    <div id="fare__register"
+                    class="flex flex-row flex-nowrap justify-between items-top content-center mt4">
+                        <div class="w-50"></div>
+
+                        <div class="w-33">
+                            <input type="hidden" id="id-hidden-input" name="credentialId">
+
+                            <input tabindex="4" name="login" id="kc-register" type="submit" value="Register"
+                            class="db fr w-100 fare-login-solid br-pill pa3 no-underline helvetica f6 fw6 tracked fare-black ttu lh-1">
+                        </div>
+                    </div>
+
+                </form>
+
+            </div><!-- kc-form -->
+
+
+            <div id="fare__to_login"
+            class="db cb w-100 mw-450px center mb4">
+
+                <div id="fare__divider__footer" class="db mw-450px h-1px center bg-fare-aqua mb3"></div>
+
+                    <p class="db cb m0 pt4 helvetica fare-black f5 fw5 tc">Return to the Login page</p>
+
+                    <a tabindex="6" href="login.html"
+                    class="db w-100 fare-login-outline br-pill inline-flex flex-row flex-nowrap justify-center items-center content-center no-underline pa3 mb2">
+                        <span class="db m0 helvetica f6 fw6 tracked fare-purple ttu lh-1">
+                        Back to Login
+                        </span>
+                    </a>
                 </div>
             </div>
-        </div><!-- kc-info -->
 
 
-    </div><!-- kc-content-wrapper -->
-</div><!-- kc-content -->
+        </div>
+    </div>
 
-    </div><!-- kc-header -->
-</div><!-- login-pf-page -->
-
-
-</body></html>
+</body>
+</html>
